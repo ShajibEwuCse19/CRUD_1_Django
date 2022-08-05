@@ -1,0 +1,8 @@
+from dataclasses import fields
+from django import forms
+from .import models
+
+class StudentForm(forms.ModelForm):
+    class Meta:
+        model = models.Student
+        fields = "__all__"

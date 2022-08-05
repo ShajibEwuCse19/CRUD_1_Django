@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<h1> student form</h1>
+<form action="" method="post" style="padding: 10px;">
+    {{ Student_form.as_p }}
+    {% csrf_token %}
+
+    <input type="submit" name="submit" value="Add Student">
+</form>
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<h1> Update Your Informations</h1>
+<form action="" method="post" style="padding: 10px;">
+    {{ Students_form.as_p }}
+    {% csrf_token %}
+
+    <input class="btn btn-secondary" type="submit" name="submit" value="Update">
+</form>
+{% endblock %}
